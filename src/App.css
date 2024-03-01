@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Orbit&family=Sixtyfour&display=swap");
+@font-face {
+  font-family: "galmuri";
+  src: url("../public/Galmuri7.ttf");
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "galmuri", sans-serif;
+  min-height: 100vh;
+  color: white;
+  margin: 0px;
+  background-size: contain;
+  background-image: url("../public/background.jpeg");
+}
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+  body {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: cover;
+  }
+}
+
+.App {
+  min-height: 97vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Sixtyfour", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+}
+
+input {
+  width: 20vw;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  background-color: inherit;
+  color: white;
+  border: 0;
+  border: 3px #cccccc solid;
+  border-radius: 10px;
+  font-family: "galmuri", sans-serif;
+  font-weight: 100;
+  border-style: dashed;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  color: white;
+  font-family: "Sixtyfour", sans-serif;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+}
